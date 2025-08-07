@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Information</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        label {
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    dd {
+      margin: 5px 0 15px 0;
+      padding-left: 10px;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
+  <main class="container">
     <h1>Personal Information</h1>
-    <ul>
-        <li>
-            <label for="name">Name:</label>
-            <span id="name">G S Mithun Krishna</span>
-        </li>
-        <li>
-            <label for="age">Age:</label>
-            <span id="age">21</span>
-        </li>
-        <li>
-            <label for="email">Email:</label>
-            <span id="email">mithunkrishnags04@gmail.com</span>
-        </li>
-        <li>
-            <label for="phone">Phone:</label>
-            <span id="phone">6385525873</span>
-        </li>
-        <li>
-            <label for="address">Address:</label>
-            <span id="address">2/219,Muthalakurichy,Thuckalay,Kanyakumari,629175</span>
-        </li>
-    </ul>
-</div>
+    <dl>
+      <dt>Name:</dt>
+      <dd id="name">G S Mithun Krishna</dd>
+
+      <dt>Age:</dt>
+      <dd id="age">21</dd>
+
+      <dt>Email:</dt>
+      <dd id="email"><a href="mailto:mithunkrishnags04@gmail.com">mithunkrishnags04@gmail.com</a></dd>
+
+      <dt>Phone:</dt>
+      <dd id="phone"><a href="tel:+916385525873">+91 63855 25873</a></dd>
+
+      <dt>Address:</dt>
+      <dd id="address">2/219, Muthalakurichy, Thuckalay, Kanyakumari, 629175</dd>
+    </dl>
+  </main>
 
 </body>
 </html>
