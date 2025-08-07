@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio and Video Example</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audio and Video Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    .media-container {
+      margin-bottom: 30px;
+    }
+    audio, video {
+      display: block;
+      margin-top: 10px;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <h2>Audio Example</h2>
-    <audio controls>
-        <source src="C:\Users\KAVIN PRAJITH\Downloads\WhatsApp Audio 2024-02-28 at 9.37.17 AM.mpeg" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
 
+  <div class="media-container">
+    <h2>Audio Example</h2>
+    <audio controls aria-label="Sample audio file">
+      <source src="audio/audio-sample.mpeg" type="audio/mpeg">
+      Your browser does not support the audio element. Please download it 
+      <a href="audio/audio-sample.mpeg">here</a>.
+    </audio>
+  </div>
+
+  <div class="media-container">
     <h2>Video Example</h2>
-    <video controls width="400">
-        <source src="D:\Movies\Hi Nanna.mkv" type="video/mp4">
-        Your browser does not support the video element.
+    <video controls width="400" aria-label="Sample video file">
+      <source src="video/sample-video.mp4" type="video/mp4">
+      Your browser does not support the video element. Please download it 
+      <a href="video/sample-video.mp4">here</a>.
     </video>
+  </div>
+
 </body>
 </html>
